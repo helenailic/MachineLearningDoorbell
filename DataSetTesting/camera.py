@@ -3,14 +3,12 @@ from picamera import PiCamera
 from time import sleep
 
 # ---------------------- on first run -----------------------------
-#camera = PiCamera()
+camera = PiCamera()
 #------------------------------------------------------------------
 
-camera.resolution = (300,300)
+camera.resolution = (200,200)
 camera.framerate = 60
-camera.brightness = 60
-camera.saturation = 60 
-camera.rotation = 180
+#camera.rotation = 180
 
 i = 0
 for i in range(50):
