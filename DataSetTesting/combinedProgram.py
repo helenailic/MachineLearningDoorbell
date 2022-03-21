@@ -6,18 +6,18 @@ import numpy
 from PIL import Image
 
 # -----uncomment the following when using a pi connected to the camera-----
-#camera = PiCamera()
+camera = PiCamera()
 
-#camera.resolution = (300,300)
-#camera.framerate = 60
-#camera.brightness = 60
-#camera.saturation = 60 
-#camera.rotation = 180
+camera.resolution = (300,300)
+camera.framerate = 60
+camera.brightness = 60
+camera.saturation = 60 
+camera.rotation = 180
 
-#while true:
-#    for i in range(10):
-#        sleep(0)
-#        camera.capture('/home/pi/MachineLearningDoorbell/DataSetTesting/dataset1/image'+str(i)+'.jpg', format = None, use_video_port=True)
+while true:
+    for i in range(15):
+         sleep(0)
+         camera.capture('/home/pi/MachineLearningDoorbell/DataSetTesting/dataset3/image'+str(i)+'.jpg', format = None, use_video_port=True)
     
 def recognizeFace():
     y = 0
