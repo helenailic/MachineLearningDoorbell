@@ -38,5 +38,12 @@ This repository documents how we developed a dataset full of our classmates and 
      -Write
   2. Download this repository on RasPi
      -Follow this file to setup and maintain Git on Pi: https://docs.google.com/document/d/1eWng-q4m3h4TwRcapSAPxexKST6AjQMfA9iVv2GRnwM/edit#
+  3. Set up hardware
+     - Mount camera
+     - Place speakers in ideal location to project sound
+     - Connect Pi to power and place within range of camera cord
+     - Attach speakers and camera to Pi
+  4. Establish VNC connection
+ 
 
 
