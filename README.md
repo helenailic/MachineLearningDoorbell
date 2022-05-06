@@ -14,11 +14,6 @@ This repository documents how we developed a dataset full of our classmates and 
      -Recommend using Tinkercad for 3D design 
   8. SD Card (16 gb or 32 gb)
 
-  -Process-
-  
-  1. Set up RasPi camera
-     -Can follow this video: youtube.com/watch?v=T8T6S5eFpqE
-
 **Software:**
   1. Python
   2. RasPICamera
@@ -27,7 +22,7 @@ This repository documents how we developed a dataset full of our classmates and 
      -Downlaod VNC Viewer and VNC Server on both Pi and PC
      -Very simple setups via internet
   5. RasPi imager of choice
-  *(we dabbled a bit in TensorFlow and PyTorch as well)*
+  -*(we dabbled a bit in TensorFlow and PyTorch as well)*
   
   -Process-
   1. Image card (this is ultimately saving your work from the RasPi onto the PC)
@@ -36,14 +31,32 @@ This repository documents how we developed a dataset full of our classmates and 
      -Install recommended 32-bit RasPi OS
      -Select SD card
      -Write
+     
   2. Download this repository on RasPi
      -Follow this file to setup and maintain Git on Pi: https://docs.google.com/document/d/1eWng-q4m3h4TwRcapSAPxexKST6AjQMfA9iVv2GRnwM/edit#
+     
   3. Set up hardware
-     - Mount camera
-     - Place speakers in ideal location to project sound
-     - Connect Pi to power and place within range of camera cord
-     - Attach speakers and camera to Pi
-  4. Establish VNC connection
+     I. Set up RasPi camera
+       -Can follow this video: youtube.com/watch?v=T8T6S5eFpqE
+     II. Connect speakers via USB and audio jack into Pi
+       -Go in RasPi config by typing in 'sudo raspi-config' in the terminal and enable speakers 
+     III. Use or design a 3D stand for camera and mount it by any method (we used command strips)
+     IV. Place speakers in ideal location to project sound
+     V. Connect Pi to power and place within range of camera cord
+     
+  4. Establish VNC connection (we used RealVNC, it is very simple to use as it goes through the internet instead of a router)
+  *Being able to VNC allows you to work on the Pi without needing to take it down from wherever you set it up, as long as it is powered*
+     I. Create an account and have someone in your group create a RealVNC team
+       -By doing this, other people in your team will be able to access everything in your address book without having to re-add it
+     II. Install VNC Viewer and VNC Server on both the Pi and the PC you want to VNC from
+       -If you use a different PC at any point you will have to redo all of this, so be consistent with which PC you use
+     III. Find the IP address of the Pi in the VNC Server and input it into the VNC Viewer on the PC
+     IV. Click on the RasPi in your address book and login with the Pi's credentials if prompted
+       -Be sure to have a Pi that everyone can access and knows the password of
+       
+  5. Download neccessary libraries for machine learning and speakers onto the Pi
+    -Install VLC Media module for speaker connection
+    -Follow this website to download all ML libraries: https://core-electronics.com.au/guides/object-identify-raspberry-pi/
  
 
 
