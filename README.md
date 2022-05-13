@@ -1,7 +1,7 @@
 # MachineLearningDoorbell
-Repository compiling the progress of our Software Engineering 2 Project, a Machine Learning Doorbell. 
+Repository compiling the progress of our Software Engineering 2 Project, a Machine Learning/Motion Detection Doorbell. 
 
-This repository documents how we developed a dataset full of our classmates and recognized each individual's face with a neural network. After recognizing an individual's face, a sound effect will play automatically to signal the teacher.
+This repository documents how we developed a motion detection camera program, created a dataset full of our classmates, and enhanced this motion detection program through a machine learning model. After recognizing an individual's face, a sound effect will play automatically to signal the teacher.
 
 **Hardware:**
   1. RaspberryPI 4 Model B for computing
@@ -40,7 +40,8 @@ This repository documents how we developed a dataset full of our classmates and 
        -Can follow this video: youtube.com/watch?v=T8T6S5eFpqE
      II. Connect speakers via USB and audio jack into Pi
        -Go in RasPi config by typing in 'sudo raspi-config' in the terminal and enable speakers 
-     III. Use or design a 3D stand for camera and mount it by any method (we used command strips)
+     III. Use or design a 3D stand for camera and mount (we used Tinkr software) it by any method (we used command strips)
+     ~~~~~~Henry insert tutorial on how to use tinker software 
      IV. Place speakers in ideal location to project sound
      V. Connect Pi to power and place within range of camera cord
      
