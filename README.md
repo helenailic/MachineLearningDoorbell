@@ -41,7 +41,6 @@ This repository documents how we developed a motion detection camera program, cr
      II. Connect speakers via USB and audio jack into Pi
        -Go in RasPi config by typing in 'sudo raspi-config' in the terminal and enable speakers 
      III. Use or design a 3D stand for camera and mount (we used Tinkr software) it by any method (we used command strips)
-     ~~~~~~Henry insert tutorial on how to use tinker software 
      IV. Place speakers in ideal location to project sound
      V. Connect Pi to power and place within range of camera cord
      
