@@ -1,7 +1,7 @@
-# MachineLearningDoorbell
-Repository compiling the progress of our Software Engineering 2 Project, a Machine Learning/Motion Detection Doorbell. 
+# "MachineLearning"Doorbell
+Repository compiling the progress of our Software Engineering 2 Project, Motion Detection *Possibly to be Machine Learning* Doorbell. 
 
-This repository documents how we developed a motion detection camera program, created a dataset full of our classmates, and enhanced this motion detection program through a machine learning model. After recognizing an individual's face, a sound effect will play automatically to signal the teacher.
+This repository documents how we developed a motion detection camera program, created a dataset full of our classmates, and *possibly* enhanced this motion detection program through a machine learning model. After recognizing an individual's face, a sound effect will play automatically to signal the teacher.
 
 **Hardware:**
   1. RaspberryPI 4 Model B for computing
@@ -11,7 +11,7 @@ This repository documents how we developed a motion detection camera program, cr
   5. 3.5A USB-C Power Supply for Pi
   6. Any USB Powered Speakers (5VDC 1A peak)
   7. Customized 3D designed camera stand
-     -Recommend using Tinkercad for 3D design 
+     -Recommend using Tinkercad or Blender for 3D design 
   8. SD Card (16 gb or 32 gb)
 
 **Software:**
@@ -23,6 +23,7 @@ This repository documents how we developed a motion detection camera program, cr
      -Very simple setups via internet
   5. RasPi imager of choice
   -*(we dabbled a bit in TensorFlow and PyTorch as well)*
+  5.*possibly not yet implemented* Machine Learning Libraries detailed in links below.
   
   -Process-
   1. Image card (this is ultimately saving your work from the RasPi onto the PC)
@@ -37,10 +38,11 @@ This repository documents how we developed a motion detection camera program, cr
      
   3. Set up hardware
      I. Set up RasPi camera
-       -Can follow this video: youtube.com/watch?v=T8T6S5eFpqE
+       -Can follow this video: youtube.com/watch?v=T8T6S5eFpqE (pay attention to flex cable insertion sides)
      II. Connect speakers via USB and audio jack into Pi
        -Go in RasPi config by typing in 'sudo raspi-config' in the terminal and enable speakers 
-     III. Use or design a 3D stand for camera and mount (we used Tinkr software) it by any method (we used command strips)
+     III. Use or design a 3D stand for camera and mount (we used Blender software) it by any method (we used command strips)
+        -Blender tutorial video used to gather basics, then experiment: https://www.youtube.com/watch?v=JUhWdGcOHPw 
      IV. Place speakers in ideal location to project sound
      V. Connect Pi to power and place within range of camera cord
      
@@ -56,7 +58,7 @@ This repository documents how we developed a motion detection camera program, cr
        
   5. Download neccessary libraries for machine learning and speakers onto the Pi
     -Install VLC Media module for speaker connection
-    -Follow this website to download all ML libraries: https://core-electronics.com.au/guides/object-identify-raspberry-pi/
+    -Follow this website to download all ML libraries: https://core-electronics.com.au/guides/object-identify-raspberry-pi/ 
  
 
 
