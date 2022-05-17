@@ -62,3 +62,4 @@ This repository documents how we developed a motion detection camera program, cr
  
 
 
+Current Issue: Still working on full implementation of the Machine Learning portion of doorbell, although it fully accomplishes purpose as a motion detection doorbell. 
