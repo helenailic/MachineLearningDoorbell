@@ -77,6 +77,7 @@ while True:
             for i in matchedIdxs:
                 name = data["names"][i]
                 counts[name] = counts.get(name, 0) + 1
+                
 
             # determine the recognized face with the largest number
             # of votes (note: in the event of an unlikely tie Python
@@ -88,6 +89,7 @@ while True:
                 currentname = name
                 sound.stop()
                 sound.play()
+                break
                 #print(currentname)
 
         # update the list of names

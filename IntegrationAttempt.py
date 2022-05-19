@@ -58,7 +58,8 @@ sound = vlc.MediaPlayer("/home/pi/boing.mp3")
     
 #  print(changedPixels, end = " ")
 #import commands
-while (True):
+
+for i in range (50000):
     a = subprocess.getstatusoutput('cd MachineLearningDoorbell')
     b = subprocess.getstatusoutput('python facial_req.py')
     print(a)
