@@ -13,7 +13,7 @@ camera.resolution = (300,300)
 camera.framerate = 60
 camera.brightness = 60
 camera.saturation = 60 
-camera.rotation = 180
+#camera.rotation = 180
 camera.start_preview()
 
 # isSamePixel method that takes in two pixels and checks if they are close
@@ -36,6 +36,7 @@ n = 0
 i = 0
 for i in range(50000):
   # take another image and see if more than 100 pixels changed from the first image
+  sleep(4)
   camera.capture('/home/pi/new.jpg', format = None, use_video_port=True)
   original = Image.open('/home/pi/orig.jpg', "r")
   new = Image.open('/home/pi/new.jpg', "r")
@@ -53,7 +54,7 @@ for i in range(50000):
         changedPixels += 1
     
   print(changedPixels, end = " ")  
-  if changedPixels > 15000:
+  if changedPixels > 20000:
     n += 1;
     sound.stop()
     sound.play()
@@ -64,4 +65,4 @@ for i in range(50000):
   
   # wait 1 second
 
-# if n >= 3, then play the sound effect because there was motion
+# if n >= 3, then play the sound effect because there was motion 
