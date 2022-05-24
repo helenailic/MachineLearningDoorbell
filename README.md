@@ -58,8 +58,7 @@ This repository documents how we developed a machine learning camera program by 
        
   5. Download neccessary libraries for machine learning and speakers onto the Pi
     -Install VLC Media module for speaker connection
-    -Follow the terminal commands at the bottom of this website to download all ML libraries: https://core-electronics.com.au/guides/object-identify-raspberry-
-    pi/ 
+    -Follow the terminal commands at the bottom of this website to download all ML libraries: https://core-electronics.com.au/guides/object-identify-raspberry-pi/ 
   
   6. Initially setup and train the model. Run the program. 
      -Follow the websites main article to setup your first model and run the program (assuming you are only inputting one person in your dataset initially):     
@@ -67,6 +66,16 @@ This repository documents how we developed a machine learning camera program by 
  
   7. Maintain the Machine Learning Program
      I. Add people to the Dataset:
-     
+       -Open "dataset" folder in the repo
+       -Add a folder with the name of the individual you will take photos of. Ex."Helena"
+       -Open headshots_picam.py program
+       -Edit the line "name = 'Helena' " and replace the name variable with the name of the individual you will be taking photos of (the name of the new folder)
+       -Make sure the path of the variable img_name is correct.
+       -Run headshots_picam.py program
+              -Will open camera viewer
+              -Click space to take photo
+              -Click Q or esc to exit when you have enough photos
      II. Retrain model with each new addition:
-
+         -type into terminal:
+               cd MachineLearningDoorbell #or name of your repository
+               python train_model.py
