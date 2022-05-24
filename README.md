@@ -1,7 +1,7 @@
-# "MachineLearning"Doorbell
-Repository compiling the progress of our Software Engineering 2 Project, Motion Detection *Possibly to be Machine Learning* Doorbell. 
+# MachineLearningDoorbell
+Repository compiling the progress of our Software Engineering 2 Project, Machine Learning (Motion Detection Capable) Doorbell. 
 
-This repository documents how we developed a motion detection camera program, created a dataset full of our classmates, and *possibly* enhanced this motion detection program through a machine learning model. After recognizing an individual's face, a sound effect will play automatically to signal the teacher.
+This repository documents how we developed a machine learning camera program by using an ML framework, developing and training a model, and creating a dataset full of our classmates. After recognizing an individual's face, a sound effect will play automatically to signal the teacher.
 
 **Hardware:**
   1. RaspberryPI 4 Model B for computing
@@ -58,8 +58,15 @@ This repository documents how we developed a motion detection camera program, cr
        
   5. Download neccessary libraries for machine learning and speakers onto the Pi
     -Install VLC Media module for speaker connection
-    -Follow this website to download all ML libraries: https://core-electronics.com.au/guides/object-identify-raspberry-pi/ 
+    -Follow the terminal commands at the bottom of this website to download all ML libraries: https://core-electronics.com.au/guides/object-identify-raspberry-
+    pi/ 
+  
+  6. Initially setup and train the model. Run the program. 
+     -Follow the websites main article to setup your first model and run the program (assuming you are only inputting one person in your dataset initially):     
+     https://core-electronics.com.au/guides/object-identify-raspberry-pi/ 
  
+  7. Maintain the Machine Learning Program
+     I. Add people to the Dataset:
+     
+     II. Retrain model with each new addition:
 
-
-Current Issue: Still working on full implementation of the Machine Learning portion of doorbell, although it fully accomplishes purpose as a motion detection doorbell. 
