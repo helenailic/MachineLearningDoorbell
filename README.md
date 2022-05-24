@@ -1,3 +1,5 @@
+**view in raw mode to see bulleted lists in better format**
+
 # MachineLearningDoorbell
 Repository compiling the progress of our Software Engineering 2 Project, Machine Learning (Motion Detection Capable) Doorbell. 
 
